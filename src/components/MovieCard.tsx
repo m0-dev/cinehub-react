@@ -6,7 +6,7 @@ function MovieCard({movie}: { movie: { title: string; url: string; release_date:
     return <div className="movie-card">
         <div className="movie-image">
             <img 
-                src={movie.url || `https://picsum.photos/200/300`}
+                src={movie.url || `https://picsum.photos/200/200?random=${Math.floor(Math.random() * 1000)}`}
                 alt={movie.title}
             />
             <div className="movie-overlay">
